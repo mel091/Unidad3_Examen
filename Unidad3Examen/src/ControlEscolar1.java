@@ -949,7 +949,7 @@ public class ControlEscolar1 extends JFrame {
 	
 	public void crearAlumno(JFrame frame)
 	{
-		this.setTitle("School Smart Zone");
+		this.setTitle("NeoByte - Añadir alumno");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(180, 20, 1000, 700);
 		contentPane = new JPanel();
@@ -1553,7 +1553,7 @@ public class ControlEscolar1 extends JFrame {
 	
 	public void consultarAlumno(JFrame frame)
 	{
-		this.setTitle("School Smart Zone");
+		this.setTitle("NeoByte - Consultar alumno");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(180, 20, 1000, 700);
 		contentPane = new JPanel();
