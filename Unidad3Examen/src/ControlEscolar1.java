@@ -223,6 +223,8 @@ public class ControlEscolar1 extends JFrame {
 		panel.add(textField);
 		textField.setColumns(10);
 		
+		
+		
 		JButton btnNewButton = new JButton("Acceder");
 		btnNewButton.setBackground(new Color(255, 255, 255));
 		btnNewButton.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 13));
@@ -230,13 +232,25 @@ public class ControlEscolar1 extends JFrame {
 		{
 			public void actionPerformed(ActionEvent e) 
 			{
-				frame.remove(panel);
+				 String usr = textField.getText();
+				 String psw = passwordField.toString();
 				
-				inicio(frame);
-				
-				frame.repaint();
-				frame.revalidate();
-				
+				 if(usr.length() <= 0 || psw.length() <= 0)
+				 {
+					 textField.setBorder(BorderFactory.createLineBorder(Color.red, 2));
+					 passwordField.setBorder(BorderFactory.createLineBorder(Color.red, 2));
+					 JOptionPane.showMessageDialog(null, "Campos vacíos"); 						 
+				 }
+				 else
+				 {
+					 frame.remove(panel);
+						
+						inicio(frame);
+						
+						frame.repaint();
+						frame.revalidate();
+				 }
+		
 			}
 			
 		});
